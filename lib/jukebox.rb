@@ -68,6 +68,7 @@ def run(songs_array)
     
   when "exit"
     exit_jukebox
+    break
     # return
   else
   puts "Invalid entry"
