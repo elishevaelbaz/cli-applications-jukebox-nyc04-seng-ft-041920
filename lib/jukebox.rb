@@ -71,8 +71,9 @@ def run(songs_array)
       break
       # return
     else
-    puts "Invalid entry"
+      puts "Invalid entry"
     end
+  end
 end
 
 # puts "Please enter a command:"
