@@ -49,30 +49,30 @@ def exit_jukebox
 end
 
 def run(songs_array)
-
-  puts "Please enter a command:"
-  action = gets.chomp
-
-    # binding.pry
-
-  case action
+  while true do
+    puts "Please enter a command:"
+    action = gets.chomp
   
-  when "help"
-    help
+      # binding.pry
   
-  when "list"
-    list(songs_array)
+    case action
     
-  when "play"
-    play(songs_array)
+    when "help"
+      help
     
-  when "exit"
-    exit_jukebox
-    break
-    # return
-  else
-  puts "Invalid entry"
-  end
+    when "list"
+      list(songs_array)
+      
+    when "play"
+      play(songs_array)
+      
+    when "exit"
+      exit_jukebox
+      break
+      # return
+    else
+    puts "Invalid entry"
+    end
 end
 
 # puts "Please enter a command:"
