@@ -49,13 +49,15 @@ def exit_jukebox
 end
 
 def run
-    text = gets.chomp
+    
 
   puts "Please enter a command:"
+  # response = gets.chomp
+  elishe = gets.chomp
 
     # binding.pry
 
-  case text
+  case response
   
   when "help"
     help
