@@ -52,8 +52,7 @@ def run
     
 
   puts "Please enter a command:"
-  # response = gets.chomp
-  elishe = gets.chomp
+  response = gets.chomp
 
     # binding.pry
 
@@ -72,25 +71,25 @@ def run
     exit_jukebox
     # return
   else
-  puts "Elisheva"
+  puts "Invalid entry"
   end
 end
 
-puts "Please enter a command:"
-    response = gets.chomp
-    case response
-    when "exit"
-      exit_jukebox
-      break
-    when "play"
-      play(songs)
-    when "help"
-      help
-    when "list"
-      list(songs)
-    else
-      puts "Invalid entry"
-    end
+# puts "Please enter a command:"
+#     response = gets.chomp
+#     case response
+#     when "exit"
+#       exit_jukebox
+#       break
+#     when "play"
+#       play(songs)
+#     when "help"
+#       help
+#     when "list"
+#       list(songs)
+#     else
+#       puts "Invalid entry"
+#     end
 
 # play(songs = [
 #   "Phoenix - 1901",
