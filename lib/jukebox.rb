@@ -48,15 +48,15 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run(songs_array)
     
 
   puts "Please enter a command:"
-  response = gets.chomp
+  action = gets.chomp
 
     # binding.pry
 
-  case response
+  case action
   
   when "help"
     help
