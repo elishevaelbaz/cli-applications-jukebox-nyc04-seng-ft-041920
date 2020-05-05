@@ -49,7 +49,6 @@ def exit_jukebox
 end
 
 def run(songs_array)
-    
 
   puts "Please enter a command:"
   action = gets.chomp
