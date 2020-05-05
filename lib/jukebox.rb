@@ -74,8 +74,21 @@ def run
   end
 end
 
-https://www.linkedin.com/in/marthasharpe2020/
-
+puts "Please enter a command:"
+    response = gets.chomp
+    case response
+    when "exit"
+      exit_jukebox
+      break
+    when "play"
+      play(songs)
+    when "help"
+      help
+    when "list"
+      list(songs)
+    else
+      puts "Invalid entry"
+    end
 
 # play(songs = [
 #   "Phoenix - 1901",
